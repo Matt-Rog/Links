@@ -1,0 +1,34 @@
+.social {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    background-color: #1E1E1E;
+    max-width: 100vw;
+    border-radius: 15px;
+    flex-direction: row;
+}
+
+.social .info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15;
+}
+
+.social .username {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    
+}
+.social .description {
+    font-size: 14px;
+    color: #FFFFFF
+    
+}
+
+.social .image {
+    width: 50;
+    height: 50;
+    margin-right: 15px;
+}

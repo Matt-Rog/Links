@@ -1,0 +1,12 @@
+<div class="socials">
+    <div *ngFor="let link of links; let i = index;">
+        <div (click)="navigateURL(i)" class="social">
+            <img src="{{ link.image_url }}" class="image" style="max-width: 50px; height: auto; ">
+            <div class="info">
+                <div class="username">{{ link.username }}</div>
+                <div class="description">{{ link.description }}</div> 
+            </div>
+            
+        </div>
+    </div>
+</div>
