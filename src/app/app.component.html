@@ -1,8 +1,13 @@
 <div class="app">
   <div class="profile">
-    <img class="image" src="assets/images/me.png">
+    <img class="image" src="https://avatars.githubusercontent.com/u/91029371?v=4">
     <h1 class="name">Matthew Rogers</h1>
-    <h4 class="description">Designer, developer, problem-solver</h4>
+    <h4 class="description">Designer, developer</h4>
+    <h4 class="currently">Currently working on...</h4>
+    <div (click)="navigateURL(projectURL)" class="project">
+      <h2 class="info">{{ projectName }}</h2>
+      <h4 class="info">{{ projectDesc }}</h4>
+    </div>
   </div>
   <app-links class="links"></app-links>
 </div>

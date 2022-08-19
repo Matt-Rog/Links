@@ -32,3 +32,13 @@
     display: flex;
     justify-content: center;
 }
+
+.app .currently {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.app .project {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 15px;
+}
