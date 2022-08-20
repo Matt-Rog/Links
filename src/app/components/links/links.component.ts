@@ -15,26 +15,26 @@ export class LinksComponent implements OnInit {
   ngOnInit(): void {
     this.links = [
       {
+        title: "Matthew Rogers",
+        url: "https://www.mattrog.com",
+        image_url: "assets/images/mrlogopurple.png",
+        username: "MattRog.com",
+        description: "View my work and contact me (Under construction)"
+      },
+      {
         title: "Github",
         url: "https://github.com/Matt-Rog",
         image_url: "assets/images/github.png",
         username: "Matt-Rog",
-        description: "View and contribute to my open-source projects"
+        description: "Contribute to my open source projects"
       },
       {
         title: "LinkedIn",
         url: "https://www.linkedin.com/in/thematthewrogers/",
         image_url: "assets/images/linkedin.png",
         username: "Matthew Rogers",
-        description: "Follow my experience and connect with me professionally"
+        description: "Connect with me professionally"
       },
-      {
-        title: "MatthewRogers",
-        url: "https://www.linkedin.com/in/thematthewrogers/",
-        image_url: "assets/images/instagram.png",
-        username: "@maffewrogers",
-        description: "Follow me on Instagram"
-      }
     ]
   }
 
