@@ -31,7 +31,7 @@ export class LinksComponent implements OnInit {
       {
         title: "Matthew Rogers",
         url: "https://www.mattrog.dev",
-        image_url: "assets/images/mrlogopurple.png",
+        image_url: "assets/images/mrlogored.png",
         username: "mattrog.dev",
         description: "View my work and contact me (Under construction)"
       },
