@@ -4,5 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #D3D3D3
+    color: #fff
 }
+.mat-button:hover{
+    background-color: red;
+}
+.mat-button {
+    background-color: #2b2c2f;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

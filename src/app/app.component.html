@@ -2,12 +2,30 @@
   <div class="profile">
     <img class="image" src="https://avatars.githubusercontent.com/u/91029371?v=4">
     <h1 class="name">Matthew Rogers</h1>
-    <h4 class="description">Designer, developer</h4>
-    <h4 class="currently">Currently working on...</h4>
+    <h4 class="description">designer | developer | problem-solver</h4>
     <div (click)="navigateURL(projectURL)" class="project">
-      <h2 class="info">{{ projectName }}</h2>
-      <h4 class="info">{{ projectDesc }}</h4>
+      <div class="currently">
+        <mat-icon>schedule</mat-icon>
+        <h4 class="currently">Currently working on</h4>
+      </div>
+      <div class="projectInfo">
+        <div class="projectHeader">
+          <h2 class="projectName">{{ projectName }}</h2>
+          <div class="icons">
+            <img class="icon" src="assets/images/github.png">
+          </div>
+        </div>
+        
+        <h4 class="info">{{ projectDesc }}</h4>
+      </div>
     </div>
   </div>
-  <app-links class="links"></app-links>
+  <div class="project">
+    <div class="currently">
+      <mat-icon>link</mat-icon>
+      <h4 class="currently">Links</h4>
+    </div>
+    <app-links class="links"></app-links>
+  </div>
+  <app-icons></app-icons>
 </div>

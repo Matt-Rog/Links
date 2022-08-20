@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { GithubService } from './services/github.service';
+import { Social } from './models/Social';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,13 @@ import { GithubService } from './services/github.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Links';
+  title = 'Matthew Rogers';
   projectName = "None"
   projectURL = "https://github.com/Matt-Rog"
   projectDesc = "Lorem Ipsum"
   profileURL = "assets/images/me.png"
+
+  icons!:Social[]
 
   constructor(private githubService:GithubService){
     githubService.getRepos().subscribe((data: any) => {

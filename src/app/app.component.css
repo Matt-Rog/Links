@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
+    justify-content: center;
     margin: auto;
     width: 100vw;
     height: 100vh;
 
-    background-color: black;
+    background-color: #16161a;
 }
 .app .profile {
     display: flex;
@@ -16,11 +16,13 @@
 }
 
 .app .profile .name {
-    color: white;
+    color: #fffffe;
+    margin: 0;
+    font-weight: 600;
 }
 
 .app .profile .description {
-    color: white;
+    color: #7e8b8a;
 }
 .app .profile .image {
     width: 100px;
@@ -34,11 +36,45 @@
 }
 
 .app .currently {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 5px;
+    color: #7e8b8a;
+    font-weight: 500;
+    margin-left: 5px;
 }
 .app .project {
-    background-color: #1e1e1e;
+    margin-top: 0px;
+    align-self: center;
+    max-width: 500px;
+    width: 80vw;
     padding: 10px;
     border-radius: 15px;
+}
+.app .projectInfo {
+    background-color: #4493ea;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.app .projectName {
+    font-weight: 500;
+    margin: 0;
+}
+
+.app .projectHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.app .info {
+    margin: 0;
+    padding: 0;
 }
