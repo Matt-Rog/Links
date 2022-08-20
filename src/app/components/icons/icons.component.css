@@ -6,6 +6,7 @@
     width: 100vw;
     border-radius: 15px;
     flex-direction: row;
+    margin-bottom: 25px;
 }
 
 .image {
