@@ -28,13 +28,6 @@ export class LinksComponent implements OnInit {
         username: "Matthew Rogers",
         description: "Connect with me professionally"
       },
-      {
-        title: "Matthew Rogers",
-        url: "https://www.mattrog.com",
-        image_url: "assets/images/hazard.png",
-        username: "mattrog.com",
-        description: "View my work and contact me (In development)"
-      },
     ]
   }
 
