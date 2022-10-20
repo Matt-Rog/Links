@@ -11,30 +11,27 @@ export class AppComponent {
   title = 'Matthew Rogers';
   projectName = "None"
   projectURL = "https://github.com/Matt-Rog"
-  projectDesc = "Lorem Ipsum"
+  projectDesc = "No recent projects found, try again later :)"
   profileURL = "assets/images/me.png"
 
   icons!:Social[]
 
   constructor(private githubService:GithubService){
-    githubService.getRepos().subscribe((data: any) => {
+    githubService.getEvents().subscribe((data: any) => {
       var recent = {
         'name': "None",
         'html_url': "https://github.com/Matt-Rog",
-        'description': "None"
+        'description': "No recent projects found, try again later :)"
       }
-      var latestTime = 0
-      for (var repo of data) {
-        var updateTimeFormat = repo.pushed_at
-        var epoch = this.epochTime(updateTimeFormat)
-        if( epoch > latestTime ){
-          latestTime = epoch
-          recent = repo
-        }
-      }
-      this.projectName = recent.name
-      this.projectURL = recent.html_url
-      this.projectDesc = recent.description
+      var event = data[0]
+      var repoURL = event.repo.url
+
+      githubService.getURL(repoURL).subscribe((data: any) => {
+        recent = data
+        this.projectName = recent.name
+        this.projectURL = recent.html_url
+        this.projectDesc = recent.description
+      })
     })
 
     githubService.getMe().subscribe((data: any) => {
